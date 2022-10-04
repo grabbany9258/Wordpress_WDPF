@@ -22,8 +22,8 @@
             'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
             'before_widget' => '<div class="col-1-3"><div class="wrap-col">',
             'after_widget' => '</div></div></div></div>',
-            'before_title' => '<div class="box"><div class="heading">',
-            'after_title' => '</div><div class="content">',
+            'before_title' => '<div class="box"><div class="heading"><h2>',
+            'after_title' => '</h2></div><div class="content">',
         ) );
      
         register_sidebar( array(
@@ -38,6 +38,8 @@
         }
      
     add_action( 'widgets_init', 'zboom_widgets_init' );
+
+
 
 
 ?>
