@@ -2,7 +2,7 @@
   <div id="posts">
     <?php if(have_posts()):  
         while(have_posts()): the_post();
-    ?>   
+    ?>    
     <div class="post">
       <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?>(<?php the_id() ?>)</a></h2>
       <p class="date"><?php the_time('F j, Y') ?> by <?php the_author() ?></p>

@@ -19,7 +19,7 @@
         <li><a href="#">Wow, great template! Good job both to Templatefusion and Henry Jorge! <br />
           <span>Happy Camper</span></a></li>
         <li><a href="#">Wow, great template! Good job both to Templatefusion and Henry Jorge! <br />
-          <span>Happy Camper</span></a></li>
+          <span>Happy Camper</span></a></li> 
       </ul>
     </div>
     <div id="about">

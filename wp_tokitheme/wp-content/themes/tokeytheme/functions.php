@@ -1,7 +1,7 @@
 <?php 
 
 add_theme_support('post-thumbnails');
-add_theme_support('widgets');
+add_theme_support('widgets'); 
 
 function add_custom_scripts(){
     wp_enqueue_style('rabbany', get_stylesheet_uri());
@@ -30,4 +30,3 @@ function register_my_menu() {
   add_action( 'widgets_init', 'wpb_widgets_init' );
 
 
-?>
