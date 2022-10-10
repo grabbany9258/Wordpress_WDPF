@@ -50,9 +50,16 @@
 	</div>
 </header>
 
-<nav>
-	<div class="wrap-nav zerogrid">
-		<div class="menu">
+<!-- For dynamic nav menu -->
+	<nav>
+		<div class="wrap-nav zerogrid">
+			<?php 
+				wp_nav_menu(array(
+					'container_class' =>"menu",
+					'container_location' =>"primary_menu",
+				));
+			?>
+		<!-- <div class="menu">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li class="current"><a href="blog.html">Blog</a></li>
@@ -60,7 +67,7 @@
 				<li><a href="single.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-		</div>
+		</div> -->
 		
 		<div class="minimenu"><div>MENU</div>
 			<select onchange="location=this.value">

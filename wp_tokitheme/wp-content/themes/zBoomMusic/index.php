@@ -11,10 +11,14 @@
                         while(have_posts()): the_post();
                  ?>
 					<article>
-						<img src="<?php echo get_template_directory_uri() ?>/images/img1.png"/>
-						<h2><a href="#">Dreaming With Us All Night</a></h2>
-						<div class="info">[By Admin on December 01, 2012 with <a href="#">01 Commnets</a>]</div>
-						<p>Consectetur adipisci. Belit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore ater magnam aliquam quaerat voluptatem. ut enim ad minima ven m, quis nost. Rum exercitationem ullam...</p>
+					
+					<?php the_post_thumbnail(); ?>
+						
+						<h2><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
+						<div class="info">[By <?php the_author()?> on <?php the_time('F j, Y')?> with <a href="<?php the_permalink()?>"> <?php comments_number('no comments', '1 comment', '% comments')?></a>]</div>
+						<?php //the_excerpt(); ?>
+						<?php the_content(); ?>
+						
 					</article>
 					
                     <?php 
