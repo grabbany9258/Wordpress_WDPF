@@ -49,4 +49,18 @@ add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' );
 add_filter( 'use_widgets_block_editor', '__return_false' );
 
 
+// For Dynamic Slider in home
+
+function slider_post_type() {
+    $args = array(
+        'public'    => true,
+        'label'     => __( 'Sliders', 'zboommusic' ),
+        'menu_icon' => 'dashicons-book',
+        'supports'  => array( 'title', 'author', 'thumbnail' ),
+    );
+    register_post_type( 'slider', $args );
+}
+add_action( 'init', 'slider_post_type' );
+
+
 ?>
