@@ -14,4 +14,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /Wordpress_WDPF/tokitheme/index.php [L]
 </IfModule>
 
+
 # END WordPress
