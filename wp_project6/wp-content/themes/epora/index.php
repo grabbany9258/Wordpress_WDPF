@@ -1,32 +1,33 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" <?php language_attributes();?>>
 
 <head>
-   <meta charset="utf-8">
+   <meta charset="<?php bloginfo('charset')?>">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Epora - Online Courses & Education HTML Template - shared on themelock.com</title>
-   <meta name="description" content="">
+   <title><?php bloginfo('title')?></title>
+   <meta name="description" content="<?php bloginfo('description')?>">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+   <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri();?>/assets/img/favicon.png">
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/backtotop.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/ui-icon.css">
-   <link rel="stylesheet" href="assets/css/elegentfonts.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/meanmenu.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/animate.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/slick.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/backtotop.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/nice-select.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/ui-icon.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/elegentfonts.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/spacing.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
+   <?php wp_head()?>
 </head>
 
-<body>
+<body <?php body_class()?>>
    <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
@@ -60,7 +61,7 @@
                      <div class="logo-area d-flex align-items-center">
                         <div class="logo">
                            <a href="index.html">
-                              <img src="assets/img/logo/logo.png" alt="logo">
+                              <img src="<?php echo get_template_directory_uri();?>/assets/img/logo/logo.png" alt="logo">
                            </a>
                         </div>
                         <div class="header-cat-menu ml-40 d-none d-md-block">
@@ -159,7 +160,7 @@
    <div class="tp-sidebar-menu">
       <button class="sidebar-close"><i class="icon_close"></i></button>
       <div class="side-logo mb-30">
-         <a href="index.html"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
+         <a href="index.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo/logo-black.png" alt="logo"></a>
       </div>
       <div class="mobile-menu"></div>
       <div class="sidebar-info">
@@ -183,7 +184,7 @@
 
       <!-- banner-area -->
       <section class="banner-area fix p-relative">
-         <div class="banner-bg" data-background="assets/img/banner/banner-01.jpg">
+         <div class="banner-bg" data-background="<?php echo get_template_directory_uri();?>/assets/img/banner/banner-01.jpg">
             <div class="container">
                <div class="row">
                   <div class="col-xl-6 col-lg-6 col-md-8">
@@ -207,7 +208,7 @@
                      </div>
                   </div>
                   <div class="banner-shape d-none d-lg-block">
-                     <img src="assets/img/banner/banner-shape-01.png" alt="banner-shape" class="b-shape">
+                     <img src="<?php echo get_template_directory_uri();?>/assets/img/banner/banner-shape-01.png" alt="banner-shape" class="b-shape">
                   </div>
                </div>
             </div>
@@ -216,7 +217,7 @@
       <!-- banner-area-end -->
 
       <!-- feature-area -->
-      <section class="tp-feature-area grey-bg pt-115 pb-90 pl-205 pr-205 bg-bottom" data-background="assets/img/bg/shape-bg-1.png">
+      <section class="tp-feature-area grey-bg pt-115 pb-90 pl-205 pr-205 bg-bottom" data-background="<?php echo get_template_directory_uri();?>/assets/img/bg/shape-bg-1.png">
          <div class="container-fluid">
             <div class="row text-center">
                <div class="col-lg-12">
@@ -284,15 +285,15 @@
             <div class="row align-items-center">
                <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6">
                   <div class="tp-about-img p-relative pb-30 ml-10">
-                     <img src="assets/img/about/about-img.png" alt="about-img">
+                     <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-img.png" alt="about-img">
                      <div class="tp-about-line-shape d-none d-md-block">
-                        <img src="assets/img/about/about-shape-03.png" alt="about-shape" class="tp-aline-one">
-                        <img src="assets/img/about/about-shape-04.png" alt="about-shape" class="tp-aline-two">
-                        <img src="assets/img/about/about-shape-05.png" alt="about-shape" class="tp-aline-three">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-shape-03.png" alt="about-shape" class="tp-aline-one">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-shape-04.png" alt="about-shape" class="tp-aline-two">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-shape-05.png" alt="about-shape" class="tp-aline-three">
                      </div>
                      <div class="tp-about-shape  d-none d-xl-block">
-                        <img src="assets/img/about/about-shape-01.png" alt="about-shape" class="a-shape-one">
-                        <img src="assets/img/about/about-shape-02.png" alt="about-shape" class="a-shape-two">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-shape-01.png" alt="about-shape" class="a-shape-one">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/about/about-shape-02.png" alt="about-shape" class="a-shape-two">
                      </div>
                   </div>
                </div>
@@ -314,7 +315,7 @@
       <!-- about-area-end -->
 
       <!-- catrgory-area -->
-      <section class="tp-category-area bg-bottom grey-bg pt-110 pb-80" data-background="assets/img/bg/shape-bg-1.png">
+      <section class="tp-category-area bg-bottom grey-bg pt-110 pb-80" data-background="<?php echo get_template_directory_uri();?>/assets/img/bg/shape-bg-1.png">
          <div class="container">
             <div class="row text-center">
                <div class="col-lg-12">
@@ -327,7 +328,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-01.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-01.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Design Deve</a></h4>
                   </div>
@@ -335,7 +336,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-02.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-02.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Development</a></h4>
                   </div>
@@ -343,7 +344,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-03.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-03.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Marketing</a></h4>
                   </div>
@@ -351,7 +352,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-04.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-04.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">It & Software</a></h4>
                   </div>
@@ -359,7 +360,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-05.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-05.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Videography</a></h4>
                   </div>
@@ -367,7 +368,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-06.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-06.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Business Sys</a></h4>
                   </div>
@@ -375,7 +376,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-07.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-07.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Photography</a></h4>
                   </div>
@@ -383,7 +384,7 @@
                <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="tp-cat-item mb-40 d-flex align-items-center">
                      <div class="tp-category-icon mr-15">
-                        <img src="assets/img/category/category-08.png" alt="category-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/category/category-08.png" alt="category-img">
                      </div>
                      <h4 class="tp-category-title"><a href="course-grid.html">Musical Intru</a></h4>
                   </div>
@@ -407,21 +408,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-01.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-01.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-01.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-01.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">The Complete 2022 Web Development Camp</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -437,21 +438,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-02.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-02.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-02.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-02.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">Complete Web Design from Figma to Webflow</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -467,21 +468,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-03.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-03.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-03.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-03.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">SEO: Structured Data Markup for Web Masters</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -497,21 +498,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-04.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-04.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-04.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-04.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">Complete Web Design from Figma Freelancing</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -527,21 +528,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-05.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-05.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-05.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-05.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">Dreamweaver - Coding your first website using</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -557,21 +558,21 @@
                <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="tpcourse mb-40">
                      <div class="tpcourse__thumb p-relative w-img fix">
-                        <a href="course-details.html"><img src="assets/img/course/course-thumb-06.jpg" alt="course-thumb"></a>
+                        <a href="course-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/course/course-thumb-06.jpg" alt="course-thumb"></a>
                         <div class="tpcourse__tag">
                            <a href="course-details.html"><i class="fi fi-rr-heart"></i></a>
                         </div>
                      </div>
                      <div class="tpcourse__content">
                         <div class="tpcourse__avatar d-flex align-items-center mb-20">
-                           <img src="assets/img/icon/course-avata-06.png" alt="course-avata">
+                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/course-avata-06.png" alt="course-avata">
                            <h4 class="tpcourse__title"><a href="course-details.html">How to Write Great Web Content - Better Search!</a></h4>
                         </div>
                         <div class="tpcourse__meta pb-15 mb-20">
                            <ul class="d-flex align-items-center">
-                              <li><img src="assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
-                              <li><img src="assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
-                              <li><img src="assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-01.png" alt="meta-icon"> <span>35 Classes</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-02.png" alt="meta-icon"> <span>291 Students</span></li>
+                              <li><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/c-meta-03.png" alt="meta-icon"> <span>4.7</span></li>
                            </ul>
                         </div>
                         <div class="tpcourse__category d-flex align-items-center justify-content-between">
@@ -600,7 +601,7 @@
             <div class="row align-items-center">
                <div class="col-xl-7 col-lg-6 col-md-6">
                   <div class="tp-choose-img p-relative mb-30 ml-25">
-                     <img src="assets/img/bg/choose-img-01.jpg" alt="choose-img">
+                     <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/choose-img-01.jpg" alt="choose-img">
                      <div class="tpchoose-img-text d-none d-md-block">
                         <ul>
                            <li>
@@ -640,7 +641,7 @@
       <!-- choose-area-end -->
 
       <!-- counter-area -->
-      <section class="tp-counter-area bg-bottom grey-bg pt-120 pb-60" data-background="assets/img/bg/shape-bg-1.png">
+      <section class="tp-counter-area bg-bottom grey-bg pt-120 pb-60" data-background="<?php echo get_template_directory_uri();?>/assets/img/bg/shape-bg-1.png">
          <div class="container">
             <div class="row">
                <div class="col-xl-3 col-md-6">
@@ -709,7 +710,7 @@
                <div class="tp-instruc-item">
                   <div class="tp-instructor text-center p-relative mb-30">
                      <div class="tp-instructor__thumb mb-25">
-                        <img src="assets/img/bg/instructor-bg-01.jpg" alt="instructor-profile">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/instructor-bg-01.jpg" alt="instructor-profile">
                      </div>
                      <div class="tp-instructor__content">
                         <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Devon Lane</a></h4>
@@ -728,7 +729,7 @@
                <div class="tp-instruc-item">
                   <div class="tp-instructor text-center p-relative mb-30">
                      <div class="tp-instructor__thumb mb-20">
-                        <img src="assets/img/bg/instructor-bg-02.jpg" alt="instructor-profile">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/instructor-bg-02.jpg" alt="instructor-profile">
                      </div>
                      <div class="tp-instructor__content">
                         <h4 class="tp-instructor__title  mb-20"><a href="instructor-profile.html">Jane Cooper</a></h4>
@@ -747,7 +748,7 @@
                <div class="tp-instruc-item">
                   <div class="tp-instructor text-center p-relative mb-30">
                      <div class="tp-instructor__thumb mb-20">
-                        <img src="assets/img/bg/instructor-bg-03.jpg" alt="instructor-profile">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/instructor-bg-03.jpg" alt="instructor-profile">
                      </div>
                      <div class="tp-instructor__content">
                         <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Courtney Henry</a></h4>
@@ -766,7 +767,7 @@
                <div class="tp-instruc-item">
                   <div class="tp-instructor text-center p-relative mb-30">
                      <div class="tp-instructor__thumb mb-20">
-                        <img src="assets/img/bg/instructor-bg-04.jpg" alt="instructor-profile">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/instructor-bg-04.jpg" alt="instructor-profile">
                      </div>
                      <div class="tp-instructor__content">
                         <h4 class="tp-instructor__title mb-20"><a href="instructor-profile.html">Devon Lane</a></h4>
@@ -816,7 +817,7 @@
                         </div>
                      </div>
                      <div class="tp-suit__img">
-                        <img src="assets/img/bg/suit-bg-01.png" alt="suitable-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/suit-bg-01.png" alt="suitable-img">
                      </div>
                   </div>
                </div>
@@ -830,7 +831,7 @@
                         </div>
                      </div>
                      <div class="tp-suit__tech">
-                        <img src="assets/img/bg/suit-bg-02.png" alt="suitable-img">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bg/suit-bg-02.png" alt="suitable-img">
                      </div>
                   </div>
                </div>
@@ -840,7 +841,7 @@
       <!-- suitable-area-end -->
 
       <!-- testimonial-area -->
-      <section class="testimonial-area bg-bottom pt-110 pb-90 " data-background="assets/img/bg/shape-bg-1.png">
+      <section class="testimonial-area bg-bottom pt-110 pb-90 " data-background="<?php echo get_template_directory_uri();?>/assets/img/bg/shape-bg-1.png">
          <div class="container">
             <div class="row justify-content-between">
                <div class="col-xl-6 col-lg-8 col-md-8 col-12">
@@ -856,7 +857,7 @@
                <div class="tp-test-slide-item">
                   <div class="tp-testi p-relative mt-65">
                      <div class="tp-testi__avatar">
-                        <img src="assets/img/icon/test-ava-01.png" alt="testi-avatar">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/test-ava-01.png" alt="testi-avatar">
                      </div>
                      <div class="tp-testi__rating pb-5">
                         <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
@@ -877,7 +878,7 @@
                <div class="tp-test-slide-item">
                   <div class="tp-testi p-relative mt-65">
                      <div class="tp-testi__avatar">
-                        <img src="assets/img/icon/test-ava-02.png" alt="testi-avatar">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/test-ava-02.png" alt="testi-avatar">
                      </div>
                      <div class="tp-testi__rating pb-5">
                         <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
@@ -898,7 +899,7 @@
                <div class="tp-test-slide-item">
                   <div class="tp-testi p-relative mt-65">
                      <div class="tp-testi__avatar">
-                        <img src="assets/img/icon/test-ava-03.png" alt="testi-avatar">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/test-ava-03.png" alt="testi-avatar">
                      </div>
                      <div class="tp-testi__rating pb-5">
                         <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
@@ -919,7 +920,7 @@
                <div class="tp-test-slide-item">
                   <div class="tp-testi p-relative mt-65">
                      <div class="tp-testi__avatar">
-                        <img src="assets/img/icon/test-ava-03.png" alt="testi-avatar">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/icon/test-ava-03.png" alt="testi-avatar">
                      </div>
                      <div class="tp-testi__rating pb-5">
                         <ul class="d-flex align-items-center justify-content-end mr-5 mb-25">
@@ -957,7 +958,7 @@
                   <div class="tp-blog mb-60">
                      <div class="tp-blog__thumb p-relative">
                         <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-01.jpg" alt="blog-img"></a>
+                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/bg/blog-img-01.jpg" alt="blog-img"></a>
                         </div>
                         <div class="tp-blog__icon"><a href="blog-details.html"><i class="fi fi-rs-angle-right"></i></a></div>
                      </div>
@@ -975,7 +976,7 @@
                   <div class="tp-blog mb-60">
                      <div class="tp-blog__thumb p-relative">
                         <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-02.jpg" alt="blog-img"></a>
+                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/bg/blog-img-02.jpg" alt="blog-img"></a>
                         </div>
                         <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
                      </div>
@@ -993,7 +994,7 @@
                   <div class="tp-blog mb-60">
                      <div class="tp-blog__thumb p-relative">
                         <div class="tp-blog__timg fix">
-                           <a href="blog-details.html"><img src="assets/img/bg/blog-img-03.jpg" alt="blog-img"></a>
+                           <a href="blog-details.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/bg/blog-img-03.jpg" alt="blog-img"></a>
                         </div>
                         <div class="tp-blog__icon"><a href="#"><i class="fi fi-rs-angle-right"></i></a></div>
                      </div>
@@ -1033,25 +1034,25 @@
                <div class="col-xl-12">
                   <div class="brand-area tp-brand-active">
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-03.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-03.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-04.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-04.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-05.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-05.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-01.png" alt="brand-logo"></a>
                      </div>
                      <div class="brand-item">
-                        <a href="#"><img src="assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/icon/brand-icon-02.png" alt="brand-logo"></a>
                      </div>
                   </div>
                </div>
@@ -1064,7 +1065,7 @@
 
       <!-- footer-area -->
       <footer>
-         <div class="footer-bg theme-bg bg-bottom" data-background="assets/img/bg/shape-bg-02.png">
+         <div class="footer-bg theme-bg bg-bottom" data-background="<?php echo get_template_directory_uri();?>/assets/img/bg/shape-bg-02.png">
             <div class="f-border pt-115 pb-70">
                <div class="container">
                   <div class="row">
@@ -1145,7 +1146,7 @@
                   <div class="row">
                      <div class="col-md-5">
                         <div class="f-copyright__logo mb-30">
-                           <a href="index.html"><img src="assets/img/logo/Logo.png" alt="logo"></a>
+                           <a href="index.html"><img src="<?php echo get_template_directory_uri();?>/assets/img/logo/Logo.png" alt="logo"></a>
                         </div>
                      </div>
                      <div class="col-md-7">
@@ -1162,21 +1163,22 @@
 
 
    <!-- JS here -->
-   <script src="assets/js/vendor/jquery.js"></script>
-   <script src="assets/js/vendor/waypoints.js"></script>
-   <script src="assets/js/bootstrap-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/parallax.js"></script>
-   <script src="assets/js/backtotop.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/main.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/vendor/jquery.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/vendor/waypoints.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap-bundle.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/meanmenu.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/magnific-popup.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/parallax.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/backtotop.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/nice-select.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/counterup.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/wow.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/isotope-pkgd.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/imagesloaded-pkgd.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/ajax-form.js"></script>
+   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
+   <?php wp_footer()?>
 </body>
 
 </html>
