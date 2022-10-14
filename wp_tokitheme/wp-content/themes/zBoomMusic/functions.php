@@ -59,7 +59,26 @@ function slider_post_type() {
         'supports'  => array( 'title', 'author', 'thumbnail' ),
     );
     register_post_type( 'slider', $args );
+
+
+$args = array(
+    'public'    => true,
+    'label'     => __( 'home_post', 'zboommusic' ),
+    'menu_icon' => 'dashicons-book',
+    'supports'  => array( 'title', 'author', 'thumbnail', 'editor' ),
+);
+register_post_type( 'home_post', $args );
+
+$args = array(
+    'public'    => true,
+    'label'     => __( 'Service', 'zboommusic' ),
+    'menu_icon' => 'dashicons-book',
+    'supports'  => array( 'title', 'author' , 'editor' ),
+);
+register_post_type( 'service', $args );
 }
+
+
 add_action( 'init', 'slider_post_type' );
 
 
