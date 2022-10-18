@@ -19,12 +19,15 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsiveslides.css" />
+	<!-- <link rel="stylesheet" href="<?php //echo get_template_directory_uri() ?>/css/eocjs-newsticker.css" /> -->
+	<link rel="stylesheet" href="<?php  echo get_stylesheet_uri() ?>">
 	
 	
 	
 	<link href='<?php echo get_template_directory_uri() ?>/images/favicon.ico' rel='icon' type='image/x-icon'/>
 	<script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri() ?>/js/responsiveslides.js"></script>
+	<!-- <script src="<?php //echo get_template_directory_uri() ?>/js/eocjs-newsticker.js"></script> -->
 	<script>
 		$(function () {
 		  $("#slider").responsiveSlides({
@@ -37,6 +40,8 @@
 		  });
 		});
 	</script>
+
+
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -51,6 +56,20 @@
 		</div>
 	</div>
 </header>
+
+
+
+ <!-- <div id="example-1">The quick brown fox jumps over the lazy dog</div> -->
+
+ <?php //NewsTicker_init(); ?>
+
+ <?php //echo NewsTicker_init(); ?>
+
+
+<!-- For not showing error when plugin deactivate -->
+ <?php if(function_exists('NewsTicker_init')) echo NewsTicker_init(); ?>
+
+
 
 <nav>
 	<div class="wrap-nav zerogrid">
