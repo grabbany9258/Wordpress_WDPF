@@ -38,7 +38,7 @@
 
 
     
-       }
+       } 
     
    add_action( 'widgets_init', 'zboom_widgets_init' );
 
