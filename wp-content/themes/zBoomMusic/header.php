@@ -63,7 +63,13 @@
 
  <?php //NewsTicker_init(); ?>
 
- <?php echo NewsTicker_init(); ?>
+ <?php //echo NewsTicker_init(); ?>
+
+
+<!-- For not showing error when plugin deactivate -->
+ <?php if(function_exists('NewsTicker_init')) echo NewsTicker_init(); ?>
+
+
 
 <nav>
 	<div class="wrap-nav zerogrid">
