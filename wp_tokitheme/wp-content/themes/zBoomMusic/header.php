@@ -19,11 +19,14 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsiveslides.css" />
+	<!-- <link rel="stylesheet" href="<?php //echo get_template_directory_uri() ?>/css/eocjs-newsticker.css" /> -->
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>"/>
 	
 	<link href='<?php echo get_template_directory_uri() ?>/images/favicon.ico' rel='icon' type='<?php echo get_template_directory_uri() ?>/image/x-icon'/>
 
 	<script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri() ?>/js/responsiveslides.js"></script>
+	<!-- <script src="<?php //echo get_template_directory_uri() ?>/js/eocjs-newsticker.js"></script> -->
 	<script>
 		$(function () {
 		  $("#slider").responsiveSlides({
@@ -49,7 +52,18 @@
 			<input type="text" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
 		</div>
 	</div>
-</header>
+</header> 
+
+
+
+<!-- <div class="ticker">The quick brown fox jumps over the lazy dog</div> -->
+
+<?php // NewsTicker_init(); ?>
+
+<?php //echo NewsTicker_init(); ?>
+
+<?php if(function_exists('NewsTicker_init')) echo NewsTicker_init(); ?>
+
 
 <!-- For dynamic nav menu -->
 	<nav>

@@ -4,3 +4,12 @@ Author: Aklima
 Author URI: https://bdprogrammers.com
 Version: 1.0
  */
+
+.ticker{
+    width: 955px ;
+    padding: 5px;
+    background-color: black !important ;   
+    margin: 0 auto;
+
+}
+
